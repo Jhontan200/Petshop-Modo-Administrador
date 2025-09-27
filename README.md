@@ -84,6 +84,17 @@ python app.py
 * 📊 Consultar datos en tiempo real desde la base de datos
 
 * 🧑‍💼 Simular operaciones administrativas de la tienda
+
+## 🎥 Demostración en Video
+
+Para comprender mejor el funcionamiento de la aplicación, puedes revisar las siguientes demostraciones:
+
+[▶️ Parte 1 – Inicio de Sesión, Gestión de Tablas de Administrador a Productos](https://youtu.be/TukiihaSY2M)
+
+
+[▶️ Parte 2 – Gestión de Tablas de Categorías a Ventas,Generación de Reportes y Cierre de Sesión](https://youtu.be/rSGAUJBp0I0)
+
+
 ## 👨‍💻 Autor y Contacto
 
 Desarrollado por: **Jhontan200**
@@ -92,4 +103,4 @@ Desarrollado por: **Jhontan200**
 
 ## 📄 Licencia
 Distribuido bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
-[![GitHub license](https://img.shields.io/github/license/Jhontan200/Petshop-Modo-Administrador)](./LICENSE) 
+[![GitHub license](https://img.shields.io/github/license/Jhontan200/Petshop-Modo-Administrador)](./LICENSE)  
