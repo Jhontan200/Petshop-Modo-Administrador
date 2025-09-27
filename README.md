@@ -65,7 +65,7 @@ Asegúrate de haber:
 * 📥 Importado los esquemas/tablas necesarias antes de iniciar la app
 
 ## 💡 Uso del Proyecto
-### ▶ 1️⃣ Ejecutar la Aplicación
+### 1️⃣ Ejecutar la Aplicación
 
 Inicia el servidor Flask desde la terminal:
 ```bash
