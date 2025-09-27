@@ -1,0 +1,97 @@
+/* Style to center the form on the screen */
+.formulario-centrado {
+    display: flex;
+    /* Enables flexbox for alignment */
+    flex-direction: column;
+    /* Stacks items vertically */
+    justify-content: center;
+    /* Vertically centers the form */
+    margin-left: 500px !important;
+    width: 400px !important;
+
+}
+
+section {
+    height: 65dvh;
+}
+
+/* General styles for input and textarea fields */
+.campo-nombre,
+.campo-precio,
+.campo-stock,
+.campo-descripcion,
+.campo-id-categoria {
+    width: 100%;
+    max-width: 320px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #563c1e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+
+.group-container1 {
+    padding: 0 5px 20px 35px;
+    border: 2px solid #563c1e;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.group-container1 h2 {
+    font-size: 20px;
+    color: #563c1e;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.titulo-centrado {
+    color: #563c1e;
+    margin-left: 630px;
+}
+
+
+.botones-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 600px;
+}
+
+.boton-verde {
+    background-color: #2ecc71;
+}
+
+.boton-verde:hover {
+    background-color: #27ae60;
+}
+
+.boton-rojo {
+    background-color: #e74c3c;
+}
+
+.boton-rojo:hover {
+    background-color: #c0392b;
+}
+
+.boton {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.etiqueta-nombre, .etiqueta-password{
+    color: #563c1e;
+    font-weight: bold;
+    font-size: 18px;
+}

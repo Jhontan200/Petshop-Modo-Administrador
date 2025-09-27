@@ -1,0 +1,260 @@
+/* Contenedor del formulario */
+form {
+    margin: 20px 15px 0 30px !important;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px !important;
+}
+
+.formulario1 {
+    margin: 20px 15px 0 230px !important;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 750px !important;
+}
+/* Style to center the form on the screen */
+.formulario-centrado {
+    display: flex; /* Enables flexbox for alignment */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Vertically centers the form */
+    margin-left: 350px !important;
+    width: 480px !important;
+    
+}
+
+/* General styles for input and textarea fields */
+.campo-nombre,
+.campo-precio,
+.campo-stock,
+.campo-descripcion,
+.campo-id-categoria {
+    width: 100%; /* Ensures all fields occupy the same width */
+    max-width: 400px; /* Sets a uniform maximum width for all fields */
+    height: 40px; /* Ensures consistent height */
+    padding: 8px; /* Adds space inside the fields */
+    font-size: 16px; /* Uniform text size */
+    border: 1px solid #563c1e;
+    border-radius: 4px; /* Rounded corners for a modern look */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Special style for the textarea to align it with input fields */
+.campo-descripcion {
+    height: 80px; /* Taller height for multi-line text */
+    resize: none; /* Prevents resizing for consistency */
+    
+}
+
+.group-container1 {
+    padding: 0 5px 20px 35px;
+    border: 2px solid #563c1e;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Suavidad del borde */
+}
+.group-container1 h2 {
+    font-size: 20px;
+    color: #563c1e;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+.titulo-centrado{
+    color: #563c1e;
+    margin-left: 530px;
+}
+/* Cada grupo (columna) */
+.group-container {
+    padding: 15px;
+    border: 2px solid #563c1e;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Suavidad del borde */
+}
+
+/* Títulos o encabezados de los grupos */
+.group-container h2 {
+    font-size: 20px;
+    color: #563c1e;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Etiquetas (label) */
+form label {
+    display: block;
+    font-size: 16px;
+    color: #563c1e;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Campos de entrada (input, select, textarea) */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="time"],
+form textarea,
+form select {
+    width: 100%;
+    /* Ocupa el ancho completo dentro de la columna */
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #6D5130;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al enfocar los campos */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #4CAF50;
+    /* Verde cuando se selecciona */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    /* Suavidad en el borde */
+    outline: none;
+}
+
+.editar_cliente {
+    text-align: left !important;
+    margin-left: 560px;
+}
+
+/* Estilo general para los campos de entrada */
+input[type="number"] {
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #6D5130;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 8px;
+}
+
+/* Cambio de estilo cuando el campo está enfocado */
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    /* Verde para indicar que el campo está activo */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    /* Resaltar borde */
+}
+
+/* Estilo para los campos con errores */
+input[type="number"].error {
+    border-color: #FF0000;
+    /* Rojo para mostrar que hay un error */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    /* Resaltar en rojo */
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    /* Color de texto estándar */
+}
+
+/* Contenedor de los grupos de campos */
+.group-container {
+    margin-bottom: 20px;
+}
+
+.productos-scroll {
+    max-height: 355px;
+    overflow-y: auto;
+    border: 2px solid #563c1e;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.producto-detalle {
+    margin-bottom: 10px;
+}
+
+.producto-detalle label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.producto-detalle input {
+    width: 40%;
+    /* Ajustar tamaño de los campos */
+    padding: 5px;
+    margin-right: 10px;
+}
+.group-container-pedido {
+    padding: 15px;
+    border: 2px solid #563c1e;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    height: 150px !important;
+    /* Suavidad del borde */
+}
+.group-container-pedido button{
+    margin-top: 5px !important;
+}
+.group-container-pedido h2 {
+    font-size: 20px;
+    color: #563c1e;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/* Estilo para inputs con datalist (cliente, administrador, producto) */
+input[list] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #6D5130;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+/* Efecto al enfocar los campos de búsqueda */
+input[list]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Estilo para los campos dentro de productos dinámicos */
+.producto-detalle input[list] {
+    width: 60%;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: 1px solid #6D5130;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al enfocar en productos */
+.producto-detalle input[list]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}

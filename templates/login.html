@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop/Inicio de Sesión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/inicio_sesion.css">
+    <link rel="stylesheet" href="../static/css/nav.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="../static/images/Logo.png" alt="PetShop Logo">
+                </a>
+            </div>
+        </header>
+        <nav></nav>
+        <section>
+            <h1 class="titulo-centrado">Inicio de Sesión</h1>
+            <form action="/login" method="post" id="formularioLogin" class="formulario formulario-centrado">
+                <div class="group-container1">
+                    <h2 class="titulo-formulario">Credenciales</h2>
+                    <div class="form-group grupo-nombre">
+                        <label for="usuario" class="etiqueta-nombre">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" class="campo-nombre"
+                            placeholder="Ingrese su usuario" required>
+                    </div>
+                    <div class="form-group grupo-password">
+                        <label for="contrasena" class="etiqueta-password">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" class="campo-nombre"
+                            placeholder="Ingrese su contraseña" required>
+                    </div>
+                </div>
+            </form>
+            <div class="botones-container">
+                <button type="submit" form="formularioLogin" class="boton boton-verde">Ingresar</button>
+                <a href="/" class="boton boton-rojo">Cancelar</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="parent">
+            <div class="div1">
+                <div class="info">
+                    <h3 class="footer-title">UBICACIÓN</h3>
+                    <div class="ubicaciones">
+                        <img src="../static/images/icons8-ubicación-24.png" alt="">
+                        <p>Av. Busch y Tercer Anillo </p>
+                    </div>
+                    <div class="ubicaciones">
+                        <img src="../static/images/icons8-ubicación-24.png" alt="">
+                        <p>Av. America esq. Av Pando </p>
+                    </div>
+                </div>
+            </div>
+            <div class="div2">
+                <div class="info">
+                    <h3 class="footer-title">CONTACTANOS</h3>
+                    <p>Atención Telefónica</p>
+                    <p>(591) 54488474</p>
+                </div>
+            </div>
+            <div class="div3">
+                <div class="info">
+                    <h3 class="footer-title ayuda-title">AYUDA</h3>
+                    <a href="preguntas_frecuentes.html">Preguntas frecuentes</a>
+                    <a href="terminos_condiciones.html">Términos y condiciones</a>
+                    <a href="politica_privacidad.html">Política de privacidad</a>
+                </div>
+            </div>
+            <div class="div4">
+                <p>SÍGUENOS EN:</p>
+                <div class="imagenes-redes-sociales">
+                    <a href="https://www.facebook.com/people/Pet-Shop-Huellitas/100063562781781/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="../static/images/icons8-facebook-48.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/petshop_huellitas/" target="_blank" rel="noopener noreferrer">
+                        <img src="../static/images//icons8-instagram-48.png" alt="instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@petshophuellita?is_from_webapp=1&sender_device=pc" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="../static/images/icons8-tiktok-48.png" alt="tiktok">
+                    </a>
+                </div>
+            </div>
+            <div class="div5">
+                <p>© Pet Shop - 2025</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/nav.js"></script>
+    <script src="../static/js/reporte.js"></script>
+</body>
+
+</html>

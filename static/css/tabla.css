@@ -1,0 +1,156 @@
+
+/* Section que contiene la tabla */
+section {
+    width: 100%;
+    margin: 50px;
+    padding: 20px !important;
+    background-color: #fff;
+}
+
+/* Títulos del section */
+section h1 {
+    margin-left: 500px;
+    color: #321b00;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    margin: 20px 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    width: 1200px;
+}
+
+table thead tr {
+    background-color: #6D5130;
+    color: #fff;
+    font-weight: bold;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Contenedor de botones */
+.botones-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 450px;
+}
+.botones-containers {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+.botones-container3 {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.botones-container4 {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 455px;
+}
+.botones-container5{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 480px;
+}
+/* Estilos de los botones */
+.boton {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-azul {
+    background-color: #3498db;
+}
+
+.boton-azul:hover {
+    background-color: #2980b9;
+}
+
+.boton-verde {
+    background-color: #2ecc71;
+}
+
+.boton-verde:hover {
+    background-color: #27ae60;
+}
+
+.boton-rojo {
+    background-color: #e74c3c;
+}
+
+.boton-rojo:hover {
+    background-color: #c0392b;
+}
+.selected {
+    background-color: #e8ad64 !important; 
+    transition: background-color 0.3s ease; /* Suavidad en el cambio */
+}
+
+
+
+
+.buscador-input {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+
+.paginacion-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.paginacion-container button {
+     margin: 0 5px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #8b8a88;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.paginacion-container button:hover {
+    background-color: #886b49;
+}
+
+.pagina-activa {
+   background-color: #6D5130!important;
+    color: white !important;
+}

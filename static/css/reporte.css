@@ -1,0 +1,97 @@
+.reporte-section {
+    padding: 20px;
+}
+
+.reporte-section h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #5c3824;
+}
+
+.reporte-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+    align-items: start;
+}
+
+.formulario-reportes {
+    padding: 20px;
+    border: 2px solid #7b4b32;
+    border-radius: 10px;
+}
+
+.contenedor-grafico {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #7b4b32;
+    border-radius: 10px;
+    max-width: 780px;
+}
+
+.grupo-reporte {
+    margin-bottom: 20px;
+}
+
+.grupo-reporte label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #5c3824;
+}
+
+.campo-reporte {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #7b4b32;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.campo-reporte1 {
+    width: 340px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #7b4b32;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.boton-reporte {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b4b32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-reporte:hover {
+    background-color: #5c3824;
+}
+
+.guardar-reporte {
+    margin-top: 20px;
+}
+
+/* Imagen del gráfico */
+#grafico-reporte {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px dashed #7b4b32;
+    border-radius: 5px;
+}
+.campos-fechas {
+    display: flex;
+    gap: 10px;
+    width: 480px;
+}
+
+.opciones-fecha {
+    flex: 1; /* Para que se repartan el espacio de forma proporcional */
+    width: 150px !important;/* Puedes ajustar este valor para el ancho mínimo */
+}

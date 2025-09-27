@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop/Añdir Pedido</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/tabla.css">
+    <link rel="stylesheet" href="../static/css/formulario.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="static/images/Logo.png" alt="PetShop Logo">
+                </a>
+            </div>
+            <div class="actions">
+                <a href="#" class="login" id="logout-link">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEb0lEQVR4nO1aW4xdYxReMzVnrXNaPWZmr7U7lAoTZa9/zzSOUJfw4BL3S2RUNEElPHqTeBSCxAMRtybCkxfaeuEJIRISIqLFg6kJnVYTEXUrqiiy9jlj9uyzZ5yzz97nzJF+yf/2X9a31/rXvy4b4Cj+p9iwZhU7j25SoSeU6XXHuNcJHXRCfzfGT05wvzK9YXNCoVtsDSwHbFwL5YDpNsf0phM6EhO61XHECb7rGLdM+LCyJwSU6R5l/DqD8OmD8YBjurdrhNQvXa1MX+RGoGngfifl6wsjsG4dkDJtXUKIvxzje47xwUBK1054pdMChlVz69ePwrEB43gopesc4wOO8f2lzFEZX8hdO05W+ir4YeqBgt+b8KHgKe3uO+njyQ1S3y6inY+CMTopFxLRYUIzzTZNh1Xw4fERWN3pGbVhqNYJ0eGUu7NXGU/tWBNO6PMUEp9O+EMOcsaEP+RMCylkZtePlo/PtOn4OKAKfpCi7h21MahAQaiNQUUFX0oh81imDZ3Qk833gZ6fAlgBxWNQhZ5LnP1427so42UpXuTlLpGYw6A5keh9EXzndK8yBu2bFH2WILLb3Cf0E5xXujuh0j8CrmyAfkIQQKkR7MVN6tFeyDJVN+OBTIstek2Y1MFg7eqR3KX8LzkYtyjTz8r4jZPyDW1voEKv9lobUwAr6iH/vGmrT5ta3sAuswr9HidSxKPXorc6kLyn6tPNLa12XunK5OsNPYJy+UYTPhOZyGd3+gDlCPVpUyYy9uAlLvrmrkmdJxll+mQBkdHyWbAMoO2SUcGv4pMzR5sNN55rGixpeRD9aUla8+FCP8YndpBnDC6eKOU8GGebTlehH+KTLNnJSGSgaG24+TGTQgT3xSdNjpRPyEgEQq90RUrgmbM26LdQ8JJmIky74hPP8MvnwDJAIHhnVNhIkHBe6arUBU5w24LLxHQr9BsJgzLen1Df09BvJAxO8NKEe5uGHsEJbc5EYi7pjybHFode5UzoAVwiaGyZxL8bCO5ImNdThUq8mBwce4faJWGIypkLL/yvAVfWFCbxUnIw7jEXHgpenDWp2Z0gsxX6EUHdW8TNywrN50K/4SKAY5Tp44RWvgyr1eEeijWQaVXAdEGy5G/tNKuyQJdQAxiyt8zcsKUYVkzPtJEKPtQc4+D2bpCpRSRwey4e1EzMMb2VJGPNzCLNLKxWh5XptZSP+EjmTSercFwymGzkAXuU6fxcGcyb9EzTxxOa7rgDbO9IKhm7Q0zPtl1cToHtoUzPpLXijEQn2WqTZtLMrPHyHoqEyJDjW03ZbF+ZfknbWwXfzr0XX78zUcloqX76jD2gIePtoZQ36jCdaDZvH8J6gYFfPtvKoSZ8ajtP5rVt5ahCHYsyneeEdhaV+anQdOjRhdANRNrx8I7U/mJmArgvFLzLXC90GxabqV+6xnp+FmC2TYDpkGN6xYJE+ziwHGC/dVikqoz3qeCLkfkxzqrgd41e/Gw99MFtlo0GjJcX2VQ9Cugx/gHRZR9v7H9BQQAAAABJRU5ErkJggg=="
+                        alt="logout-rounded">
+                    <span>Cerrar sesión</span>
+                </a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li class="categorias">
+                    <div class="menu-container1">
+                        <div class="menu-button">MENÚ</div>
+                        <ul class="menu">
+                            <li>
+                                <a href="{{ url_for('lista_administradores') }}">Administrador</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('lista_clientes') }}">Clientes</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('lista_pedidos') }}">Pedidos</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('lista_productos') }}">Productos</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('lista_categorias') }}">Categorías</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('lista_ventas') }}">Ventas</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('reporte_formulario') }}">Reportes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu1"><a href="{{ url_for('lista_administradores') }}">ADMINISTRADOR</a></li>
+                <li class="menu1"><a href="{{ url_for('lista_clientes') }}">CLIENTES</a></li>
+                <li class="menu1"><a href="{{ url_for('lista_pedidos') }}" class="active">PEDIDOS</a></li>
+                <li class="menu1"><a href="{{ url_for('lista_productos') }}">PRODUCTOS</a></li>
+                <li class="menu1"><a href="{{ url_for('lista_categorias') }}">CATEGORÍAS</a></li>
+                <li class="menu1"><a href="{{ url_for('lista_ventas') }}">VENTAS</a></li>
+                <li class="menu1"><a href="{{ url_for('reporte_formulario') }}">REPORTES</a></li>
+
+            </ul>
+        </nav>
+        <section>
+            <h1 class="titulo-centrado">Añadir Pedido</h1>
+            <form action="/añadir_pedido" method="post" id="formularioAñadirPedido" class="formulario">
+                <div class="group-container">
+                    <h2>Detalles del Pedido</h2>
+
+                    <div class="form-group">
+                        <label for="id_cliente">Cliente:</label>
+                        <input list="listaClientes" id="id_cliente" name="id_cliente" required
+                            placeholder="Buscar cliente...">
+                        <datalist id="listaClientes">
+                            {% for cliente in clientes %}
+                            <option value="{{ cliente.id_cliente }}">{{ cliente.nombre_cliente }}</option>
+                            {% endfor %}
+                        </datalist>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_administrador">Administrador:</label>
+                        <input list="listaAdministradores" id="id_administrador" name="id_administrador" required
+                            placeholder="Buscar administrador...">
+                        <datalist id="listaAdministradores">
+                            {% for admin in administradores %}
+                            <option value="{{ admin.id_administrador }}">{{ admin.nombre_admin }}</option>
+                            {% endfor %}
+                        </datalist>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado del Pedido:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="aceptado">Aceptado</option>
+                            <option value="rechazado">Rechazado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha">Fecha del Pedido:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                </div>
+
+                <div class="group-container">
+                    <h2>Productos del Pedido</h2>
+                    <div class="form-group">
+                        <label for="cantidad_productos">Cantidad de Productos:</label>
+                        <input type="number" id="cantidad_productos" placeholder="Cantidad de productos">
+                    </div>
+                    <button type="button" class="boton boton-azul" onclick="agregarProductos()">Añadir
+                        Productos</button>
+                </div>
+
+                <div id="productosContainer" class="productos-scroll"></div>
+            </form>
+
+            <div class="botones-container">
+                <button type="button" class="boton boton-verde" onclick="verificarPedido()">Guardar Pedido</button>
+                <a href="/pedidos" class="boton boton-rojo">Cancelar</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="parent">
+            <div class="div1">
+                <div class="info">
+                    <h3 class="footer-title">UBICACIÓN</h3>
+                    <div class="ubicaciones">
+                        <img src="static/images/icons8-ubicación-24.png" alt="">
+                        <p>Av. Busch y Tercer Anillo </p>
+                    </div>
+                    <div class="ubicaciones">
+                        <img src="static/images/icons8-ubicación-24.png" alt="">
+                        <p>Av. America esq. Av Pando </p>
+                    </div>
+                </div>
+            </div>
+            <div class="div2">
+                <div class="info">
+                    <h3 class="footer-title">CONTACTANOS</h3>
+                    <p>Atención Telefónica</p>
+                    <p>(591) 54488474</p>
+                </div>
+            </div>
+            <div class="div3">
+                <div class="info">
+                    <h3 class="footer-title ayuda-title">AYUDA</h3>
+                    <a href="preguntas_frecuentes.html">Preguntas frecuentes</a>
+                    <a href="terminos_condiciones.html">Términos y condiciones</a>
+                    <a href="politica_privacidad.html">Política de privacidad</a>
+                </div>
+            </div>
+            <div class="div4">
+                <p>SÍGUENOS EN:</p>
+                <div class="imagenes-redes-sociales">
+                    <a href="https://www.facebook.com/people/Pet-Shop-Huellitas/100063562781781/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="static/images/icons8-facebook-48.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/petshop_huellitas/" target="_blank" rel="noopener noreferrer">
+                        <img src="static/images//icons8-instagram-48.png" alt="instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@petshophuellita?is_from_webapp=1&sender_device=pc" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="static/images/icons8-tiktok-48.png" alt="tiktok">
+                    </a>
+                </div>
+            </div>
+            <div class="div5">
+                <p>© Pet Shop - 2025</p>
+            </div>
+        </footer>
+    </div>
+    <template id="templateProducto">
+        <div class="form-group producto-detalle">
+            <label>Producto:</label>
+            <input list="listaProductos" name="id_producto[]" required placeholder="Buscar producto...">
+            <datalist id="listaProductos">
+                {% for producto in productos %}
+                <option value="{{ producto.id_producto }}">{{ producto.nombre }}</option>
+                {% endfor %}
+            </datalist>
+            <label>Cantidad:</label>
+            <input type="number" name="cantidad[]" placeholder="Cantidad" required>
+            <button type="button" class="boton-icono" onclick="this.parentElement.remove()">🗑️</button>
+        </div>
+    </template>
+
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/nav.js"></script>
+    <script src="../static/js/añadir_pedido.js"></script>
+    <script src="../static/js/cerrar_sesion.js"></script>
+</body>
+
+</html>
