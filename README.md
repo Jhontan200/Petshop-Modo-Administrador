@@ -89,10 +89,11 @@ python app.py
 
 Para comprender mejor el funcionamiento de la aplicación, puedes revisar las siguientes demostraciones:
 
-[▶️ Parte 1 – Inicio de Sesión, Gestión de Tablas de Administrador a Productos](https://youtu.be/TukiihaSY2M)
+[▶️ Parte 1 – Inicio de Sesión, Gestión de Tablas de Administrador a Productos](https://youtu.be/rSGAUJBp0I0)
 
 
-[▶️ Parte 2 – Gestión de Tablas de Categorías a Ventas,Generación de Reportes y Cierre de Sesión](https://youtu.be/rSGAUJBp0I0)
+[▶️ Parte 2 – Gestión de Tablas de Categorías a Ventas,Generación de Reportes y Cierre de Sesión](https://youtu.be/TukiihaSY2M)
+
 
 
 ## 👨‍💻 Autor y Contacto
