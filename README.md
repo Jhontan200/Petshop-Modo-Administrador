@@ -4,23 +4,23 @@ Este proyecto es una aplicación web diseñada para simular un Modo Administrado
 
 ## 🛠️ Tecnologías y Librerías
 Esta aplicación fue desarrollada en Python y utiliza el siguiente stack de tecnologías:
-| Tecnología | Rol |
+| **Tecnología** | **Rol** |
 |-----------|-----|
-| Python y JavaScript | Lenguajes principales para la lógica del servidor y la interactividad del frontend. |
-| MySQL | Base de datos relacional utilizada para el almacenamiento de todos los datos (administradores, clientes, pedidos, categorías, productos). |
-| Flask | Micro-framework de Python esencial para el desarrollo de la aplicación web y el routing.|
-| pandas | Utilizado para la manipulación y procesamiento de datos. |
-| mysql.connector | Librería oficial de Python para la conexión y comunicación con la base de datos MySQL. |
-| fpdf | Utilizado para la generación de reportes y documentos en formato PDF. |
+| 🐍 **Python** y 🌐 **JavaScript** | Lenguajes principales para la lógica del servidor y la interactividad del frontend. |
+| 🛢️ **MySQL** | Base de datos relacional utilizada para el almacenamiento de todos los datos (administradores, clientes, pedidos, categorías, productos). |
+| 🌶 **Flask** | Micro-framework de Python esencial para el desarrollo de la aplicación web y el routing.|
+| 📊 **pandas** | Utilizado para la manipulación y procesamiento de datos. |
+| 🔌 **mysql.connector** | Librería oficial de Python para la conexión y comunicación con la base de datos MySQL. |
+| 📝 **fpdf** | Utilizado para la generación de reportes y documentos en formato PDF. |
 
 ### Librerías Auxiliares Importantes
 
-| Tecnología | Rol |
+| **Tecnología** | **Rol** |
 |-----------|-----|
-| matplotlib.pyplot | Herramienta de visualización de datos para crear gráficos estáticos. |
-| io | Módulo para trabajar con flujos de datos en memoria (buffers) para archivos temporales. |
-| zipfile | Módulo para comprimir y archivar múltiples archivos (reporte Excel y gráfico). |
-| os | Módulo de interacción con el sistema operativo (usado para eliminar archivos temporales). |
+| 📈 **matplotlib.pyplot** | Herramienta de visualización de datos para crear gráficos estáticos. |
+| 💾 **io** | Módulo para trabajar con flujos de datos en memoria (buffers) para archivos temporales. |
+| 🗜️ **zipfile** | Módulo para comprimir y archivar múltiples archivos (reporte Excel y gráfico). |
+| 🧭 **os** | Módulo de interacción con el sistema operativo (usado para eliminar archivos temporales). |
 
 ## 🚀 Instalación y Configuración Local
 ### 📌 Prerrequisitos
@@ -96,11 +96,22 @@ Para comprender mejor el funcionamiento de la aplicación, puedes revisar las si
 
 
 
-## 👨‍💻 Autor y Contacto
+## 📌 Estructura Básica del Proyecto
 
-Desarrollado por: **Jhontan200**
+```bash
+Petshop-Cliente/
+│
+├── app.py                  # Archivo principal Flask
+├── templates/              # Archivos HTML para la interfaz
+├── static/                 # Archivos CSS / JS
+├── LICENSE                 # Este archivo 📄
+├── README.md               # Este archivo 📄
+```
 
-[🔗 Perfil de GitHub](https://github.com/Jhontan200)
+## 👨‍💻 Autor
+
+Desarrollado por: [Jhontan200](https://github.com/Jhontan200)
+
 
 ## 📄 Licencia
 Distribuido bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
